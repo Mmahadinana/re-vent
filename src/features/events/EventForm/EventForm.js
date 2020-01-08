@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component} from 'react';
 import { Segment, Form, Button } from 'semantic-ui-react';
 
 class EventForm extends Component {
@@ -11,7 +11,7 @@ class EventForm extends Component {
     }
     handleFormSubmit = evt => {
         evt.preventDefault();
-        console.log(this.state);
+        this.props.createEvent(this.state)
         
     }
 
